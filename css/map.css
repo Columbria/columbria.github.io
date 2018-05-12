@@ -21,15 +21,15 @@ body {
 	flex-shrink: 0;
 
 	height: 100vh; 
-	background: url(../img/9.jpg) no-repeat center center fixed;
+	background: url(../img/3.jpg) no-repeat center center;
 	background-size: cover;
 }
 #resizable { 
-	width: 150px;
+	width: 480px;
 	height: 100vh;
 	border-right: gray solid 1px;
 	background: lightgray;
-	background: url(../img/1.jpg)  no-repeat center center fixed;
+	background: url(../img/1.jpg)  no-repeat center center;
 	background-size: cover;
 }
   
