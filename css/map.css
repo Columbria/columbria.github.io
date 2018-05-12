@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+}
+#site-wrapper{
+	display: flex;
+}
+
+#menu-wrapper { 
+	flex-grow: 0;
+	flex-shrink: 0;
+
+	width: 400px; 
+	height: 100vh; 
+	background: #f2f2f2;
+	border-right: gray solid 1px;
+
+	padding: 8px;
+}
+#map-wrapper { 
+	flex-grow: 1;
+	flex-shrink: 0;
+
+	height: 100vh; 
+	background: url(../img/9.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+#resizable { 
+	width: 150px;
+	height: 100vh;
+	border-right: gray solid 1px;
+	background: lightgray;
+	background: url(../img/1.jpg)  no-repeat center center fixed;
+	background-size: cover;
+}
+  
