@@ -47,12 +47,6 @@ $(function () {
             }
         },
         plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: false
-            },
             area: {
                 dataLabels: {
                     enabled: true
@@ -84,8 +78,9 @@ $(function () {
 
         series: [
             {
+                showInLegend: false,
                 type: 'area',
-                name: 'Elevation above see level',
+                name: 'Elevation above see level, m',
                 data: [
                     [1466553600000, 317.2],
                     [1500163200000, 315.5],
@@ -107,12 +102,6 @@ $(function () {
             }
         },
         plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: false
-            },
             area: {
                 dataLabels: {
                     enabled: true
@@ -144,6 +133,7 @@ $(function () {
 
         series: [
             {
+                showInLegend: false,
                 type: 'area',
                 name: 'Water Area',
                 data: [
