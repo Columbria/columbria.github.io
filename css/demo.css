@@ -1,3 +1,7 @@
+body {
+    font-family: Saira Semi Condensed;
+}
+
 #demo-chart-volume {
     width: 100%;
     height: 250px;
@@ -14,7 +18,7 @@
 
 .container-no-margin {
     margin-left: -40px;
-    width: 430px;
+    width: 460px;
 }
 
 .input-group-text {
@@ -35,16 +39,37 @@
     border-left-width: 0;
 }
 
+#dateFrom, #dateTill {
+    border-right-width: 0;
+}
+
 .line-item {
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
-.nav-tabs .nav-link {
+.btn, .nav-tabs .nav-link {
     border-radius: 0;
 }
 
-.white-bottom-space {
-    background-color: white;
-    height: 100%;
+.media-img {
+    height: 64px;
+    width: 64px;
+}
+
+.media-item {
+    cursor: pointer;
+}
+
+.media-item.active .text-muted {
+    color: white !important;
+}
+
+.media-item.active {
+    background-color: #00669e;
+    border-color: #00669e;
+}
+
+.show-on-results {
+    display: none;
 }
