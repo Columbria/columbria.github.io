@@ -52,3 +52,25 @@
     background-color: white;
     height: 1000px;
 }
+
+.media-img {
+    height: 64px;
+    width: 64px;
+}
+
+.media-item {
+    cursor: pointer;
+}
+
+.media-item.active .text-muted {
+    color: white !important;
+}
+
+.media-item.active {
+    background-color: #00669e;
+    border-color: #00669e;
+}
+
+.show-on-results {
+    display: none;
+}

@@ -19,6 +19,7 @@
     <link href = "css/demo.css" rel= "stylesheet">
     <script src = "js/map.js"></script>
     <script src = "js/chart.js"></script>
+    <script src = "js/sidebar.js"></script>
 	</head>
 	<body id="site-wrapper">
     <div id="menu-wrapper">
@@ -31,24 +32,25 @@
             </div>
             <div class="row">
                 <div class="col">
+                    <form class="show-on-search">
 
-                    <div class="input-group line-item">
+                        <div class="input-group line-item">
 
-                        <div class="input-group-prepend ">
-                            <span class="input-group-text">
-                                <i class="fas fa-bars"></i>
+                            <div class="input-group-prepend ">
+                                <span class="input-group-text">
+                                    <i class="fas fa-bars"></i>
 
-                            </span>
+                                </span>
+                            </div>
+                            <input type="email" class="form-control form-control-lg" id="searchInput" placeholder="Search WaterSat">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
                         </div>
-                        <input type="email" class="form-control form-control-lg" id="searchInput" placeholder="Search WaterSat">
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                <i class="fas fa-times"></i>
-                            </span>
-                        </div>
-                    </div>
 
-                    <form>
+
                         <div class="row line-item">
                             <div class="col" style="padding-right: 5px">
                                 <div class="input-group">
@@ -71,12 +73,67 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <button type="button" class="btn btn-secondary btn-block">Search</button>
+                                <button type="button" id="searchButton" class="btn btn-secondary btn-block">Search</button>
                             </div>
                         </div>
                     </form>
 
-                    <div class="container container-no-margin">
+                    <div class=" show-on-results">
+                        <br>
+                        <!--just empty line-->
+                    </div>
+
+                    <div class="row" id="searchResults" style="display: none;">
+                        <div class="col">
+
+                            <ul class="list-group">
+                                <li class="list-group-item media-item">
+                                    <div class="media">
+                                        <img class="mr-3 media-img" src="img/1.jpg">
+                                        <div class="media-body">
+                                            3 data points
+                                            <br>
+                                            <small class="text-muted">39.616934, -123.680967</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item media-item">
+                                    <div class="media">
+                                        <img class="mr-3 media-img" src="img/4.jpg">
+                                        <div class="media-body">
+                                            3 data points
+                                            <br>
+                                            <small class="text-muted">40.866934, -122.389301</small>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item media-item">
+                                    <div class="media">
+                                        <img class="mr-3 media-img" src="img/7.jpg">
+                                        <div class="media-body">
+                                            3 data points
+                                            <br>
+                                            <small class="text-muted">42.116934, -121.097634</small>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <form class="show-on-results">
+                        <div class="row line-item">
+                            <div class="col">
+                                <button type="button" id="refineResultsButton" class="btn btn-secondary btn-block">Refine search results</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+
+
+                    <div class="container container-no-margin show-on-results">
                         <div class="row">
                             <div class="col">
                                 <ul class="nav nav-tabs nav-justified">
