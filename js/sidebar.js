@@ -12,6 +12,9 @@ $( function() {
         $('.show-on-search').hide();
         $('.show-on-results').show();
         $('.media-item:not(.active)').hide();
+
+        var index = $('.media-item.active').data('index');
+        initSlider(index)
     });
 
     $('#refineResultsButton').on('click', function (e) {
@@ -35,4 +38,9 @@ function showResults(timeToSearch) {
         $('#loader').hide();
         $('#searchResults').show();
     }, timeToSearch);
+}
+
+function initSlider(index) {
+    console.log('initSlider ' + index);
+
 }
