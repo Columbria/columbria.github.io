@@ -22,22 +22,24 @@ body {
 	flex-shrink: 0;
 
 	height: 100vh; 
-	background: url(../img/3.jpg) no-repeat center center fixed;
+	background: url(../img/planet.jpeg) no-repeat top left;
 	background-size: cover;
 	position: relative;
 }
 #resizable { 
+	display: none;
 	width: 50%;
 	height: 100vh;
 	border-right: gray solid 1px;
 	background: lightgray;
-	background: url(../img/1.jpg)  no-repeat center center fixed;
+	background: url(../img/planet.jpeg)  no-repeat top left;
 	background-size: cover;
 }
 /*
 	SLIDER STYLE
 					*/
 #slider-3 {
+	display: none;
 	position: absolute;
 	top: 80px;
 	left: 80px;
