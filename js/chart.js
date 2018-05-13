@@ -1,5 +1,13 @@
 $(function () {
 
+    Highcharts.setOptions({
+        chart: {
+            style: {
+                fontFamily: 'Saira Semi Condensed'
+            }
+        }
+    });
+
     Highcharts.chart('demo-chart-volume', {
         chart: {
             type: 'column'
