@@ -12,6 +12,7 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
         <!-- MY LINKS -->
     <link href = "css/map.css" rel= "stylesheet">
@@ -25,29 +26,68 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div id = "slider-3"></div>
+                    <div id="slider-3"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
 
-                    <ul class="nav nav-tabs nav-justified">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Day</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Month</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Year</a>
-                        </li>
-                    </ul>
+                    <div class="input-group line-item">
 
-                    <div id="demo-chart-volume" ></div>
-                    <br>
-                    <div id="demo-chart-area" ></div>
-                    <br>
-                    <div id="demo-chart-elevation" ></div>
+                        <div class="input-group-prepend ">
+                            <span class="input-group-text">
+                                <i class="fas fa-bars"></i>
+
+                            </span>
+                        </div>
+                        <input type="email" class="form-control form-control-lg" id="searchInput"
+                               placeholder="Search WaterSat">
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="container container-no-margin">
+                        <div class="row">
+                            <div class="col">
+                                <ul class="nav nav-tabs nav-justified">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Day</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Month</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Year</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div id="demo-chart-volume" class="chart"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div id="demo-chart-area" class="chart"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div id="demo-chart-elevation" class="chart"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="white-bottom-space"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

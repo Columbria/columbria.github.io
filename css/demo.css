@@ -11,3 +11,40 @@
     width: 100%;
     height: 200px;
 }
+
+.container-no-margin {
+    margin-left: -40px;
+    width: 430px;
+}
+
+.input-group-text {
+    background-color: white;
+    cursor: pointer;
+}
+
+.input-group-prepend .input-group-text {
+    border-right-width: 0;
+}
+
+.input-group-append .input-group-text {
+    border-left-width: 0;
+}
+
+#searchInput {
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+.line-item {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.nav-tabs .nav-link {
+    border-radius: 0;
+}
+
+.white-bottom-space {
+    background-color: white;
+    height: 100%;
+}
