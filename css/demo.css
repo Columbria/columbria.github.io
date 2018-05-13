@@ -14,7 +14,7 @@
 
 .container-no-margin {
     margin-left: -40px;
-    width: 430px;
+    width: 460px;
 }
 
 .input-group-text {
@@ -46,11 +46,6 @@
 
 .btn, .nav-tabs .nav-link {
     border-radius: 0;
-}
-
-.white-bottom-space {
-    background-color: white;
-    height: 1000px;
 }
 
 .media-img {
